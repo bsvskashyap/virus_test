@@ -26,7 +26,7 @@ function change(e, d) {
         var x1 = 0;
         var margin = { top: 50, right: 90, bottom: 50, left: 90 };
         width = 1800 - margin.left - margin.right,
-            height = $(window).height() - margin.top - margin.bottom;
+            height = 1800- margin.top - margin.bottom;
 
         function handleZoom(e) {
             d3.select('svg g')
@@ -34,7 +34,6 @@ function change(e, d) {
 
 
         }
-
         let zoom = d3.zoom()
             .on('zoom', handleZoom)
 
