@@ -18,7 +18,7 @@ function change(e, d) {
     d3.select('.non').remove('div');
     d3.select('.color').append('div').attr("class", "non");
     var species = "data/" + e.target.value + "_species" + ".json";
-    var x = "data/" + e.target.value + ".json";
+    var x = e.target.value + ".json";
     console.log(x);
     d3.json(x).then(function (data) {
         console.log(data)
